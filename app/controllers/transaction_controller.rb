@@ -47,9 +47,9 @@ class TransactionController < ApplicationController
     # logger.info @transaction.inspect
     last_transaction = Transaction.all.last
     if last_transaction==nil
-    order_id = "RyanShop1"
+    order_id = "RyanRShop1"
     else
-    order_id = "RyanShop"+(last_transaction.id+1).to_s
+    order_id = "RyanRShop"+(last_transaction.id+1).to_s
     end
 
     # ActiveMerchant accepts all amounts as Integer values in cents
