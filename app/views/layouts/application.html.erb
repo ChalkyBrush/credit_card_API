@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="landing_page">
+<div class="full_container">
+<head>
+  <title>CreditCard</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render '/layouts/alert' %>
+<%= yield %>
+
+</body>
+</div>
+</html>
+<script>
+NotifierjsConfig.position = ["bottom", "right"];
+  var flash = $(".flashy")
+  if(flash.children().length > 0)
+  {
+      var message = flash.children().text() 
+    if(flash.children('.label-warning').length >0)
+    {
+ 
+  Notifier.error(message, "Error!");
+    }
+    if(flash.children('.label-success').length >0)
+    {
+  var message = flash.children().text()  
+  Notifier.success(message, "Success!");
+    }
+  }
+</script>

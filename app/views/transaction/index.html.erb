@@ -1,0 +1,9 @@
+<%= link_to 'Back', "/transaction/new", class: 'btn btn-info json'%><br><br>
+---------------------------------------------------------------
+<%@transactions.each do |transaction|%>
+<div class="signup">
+<p class="slogan">Name: <%=transaction.full_name%><br>Amount: $<%=transaction.amount%><br><%=transaction.created_at%><br>ID: <%=transaction.receipt_id%></p>
+---------------------------------------------------------------
+</div>
+<%end%>
+<%= link_to 'Back', "/transaction/new", class: 'btn btn-info json'%>

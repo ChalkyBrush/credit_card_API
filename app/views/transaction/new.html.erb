@@ -1,0 +1,73 @@
+<p class="slogan">Ryan's Moneris Sandbox Test</p>
+<div class ="full_container">
+  <div class="login">
+
+
+<div class="signup">
+
+  <h3>Make a Payment</h3>
+
+
+  <%= link_to 'Populate with default', "#", class: 'btn btn-info json', id: 'default'%>
+      <%= form_tag("/transaction/process_transaction", method: "get") do %>
+<!--       <p class="slogan">Bob Bobsen</p>
+      <p class="slogan">Card Number: 4242424242424242</p>
+      <p class="slogan">Expiration: 08 / <%=Time.now.year+1%></p>
+      <p class="slogan">CVV: 000 </p><br> -->
+        <div class="field fullname">
+<!--           <%= label_tag(:firstname, "First Name") %><br> -->
+          <%= text_field_tag(:firstname, "", placeholder: "First Name" ) %>
+        </div>
+        <div class="field fullname">
+<!--           <%= label_tag(:lastname, "Last Name") %><br> -->
+          <%= text_field_tag(:lastname, "", placeholder: "Last Name" ) %>
+        </div>
+        <div class="field">
+<!--           <%= label_tag(:credit_card, "Credit Card Number") %><br> -->
+          <%= text_field_tag(:credit_card, "", placeholder: "Credit Card #" ) %>
+        </div>
+        <div class="field expiry">
+<!--           <%= label_tag(:expiration_month, "Expiration MM/YY") %><br> -->
+          <%= text_field_tag(:expiration_month, "", placeholder: "Expiry MM" ) %>
+        </div>
+         <div class="field expiry">
+<!--           <%= label_tag(:expiration_month, "Expiration MM/YY") %><br> -->
+          <%= text_field_tag(:expiration_year, "", placeholder: "Expiry YYYY" ) %>
+        </div>
+        <div class="field expiry">
+<!--           <%= label_tag(:CVV, "CVV") %><br> -->
+          <%= text_field_tag(:CVV, "", placeholder: "CVV" ) %>
+        </div>
+        <div class="field">
+<!--           <%= label_tag(:amount_in_cents, "Amount of Payment in Cents") %><br> -->
+          <%= number_field_tag(:amount_in_cents, "", placeholder: "Amount in Cents" ) %><br>
+       </div>
+        <%= button_tag(type: "submit", class: "btn btn-danger create") do %>
+          <i class="icon-btc"></i> Submit Payment
+          <% end %>
+      <% end %>
+</div>
+</div>
+
+
+</div>
+
+  <div class="full_container" id="json">
+  <div class="signup">
+    <%= link_to 'View Transaction Index in HTML', "/transaction/index", class: 'btn btn-info json'%>
+    <%= link_to 'View Transaction Index in JSON', "/transaction/index.json", class: 'btn btn-info json'%>
+  </div>
+  </div>
+    
+  <script>
+
+$("#default").on("click", function() {
+    $("#firstname").val("Bob")
+    $("#lastname").val("Bobsden")
+    $("#credit_card").val('4242424242424242')
+    $("#expiration_month").val('08')
+    $("#expiration_year").val('2014')
+    $("#CVV").val('000')
+    $("#amount_in_cents").val('1000')
+});
+  </script>

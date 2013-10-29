@@ -1,0 +1,114 @@
+/* Landing Page CSS */
+
+.full_container {
+  text-align: center;
+  position: absolute;
+  width: 500px;
+  margin-left: -250px;
+  left: 50%;
+  margin-top: 60px;
+  background-color: rgba(250, 250, 250, .3);
+  border-radius: 8px;
+  padding-bottom:20px;
+  color: #191919
+
+}
+
+.landing_page {
+  background: url("/assets/blueGradient.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.field input {
+  height: 30px;
+  width: 346px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-left: 10px;
+  line-height: 24px;
+}
+.fullname{
+  display:inline-block;
+  margin:left:20px;
+  margin:right:20px;
+
+}
+.fullname input{
+width:164px;
+display:inline-block;
+
+}
+
+.expiry{
+  display:inline-block;
+  margin:left:20px;
+  margin:right:20px;
+}
+.expiry input{
+width:104px;
+display:inline-block;
+
+}
+.create {
+  padding: 15px 80px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 8px;
+  color: #eeeeee;
+}
+
+.field input {
+  margin-top:8px;
+  margin-bottom: 12px;
+}
+
+.slogan {
+  line-height: 25px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Helvetica Neue', 'sans-serif';
+  font-size: 24px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+  letter-spacing: 2px;
+  position:relative;
+  top: 20px;
+}
+
+.label {
+  margin:auto !important;
+  font-size:20px !important;
+  line-height:22px !important;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  padding: 2px 0px !important;
+/*  visibility: hidden;
+  position:absolute;*/
+}
+
+
+#json{
+margin-top:500px;
+}
+
+.json{
+  display:inline-block;
+  position:relative;
+  top:10px;
+  text-decoration: none;
+}
+
+#default{
+  position:relative;
+  top:-45px;
+  left:-168px;
+}
