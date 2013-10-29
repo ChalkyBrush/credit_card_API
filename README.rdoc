@@ -1,1 +1,10 @@
-A simple app for processing a credit card
+A simple app for processing a credit card.
+
+Uses ActiveMerchant's MonerisGateway class.
+API Username: store5
+Password: yesguy
+
+Takes input on form and sends a request to Moneris test server using ActiveMerchant's Purchase method.
+The response is received in JSON and values are saved to a transaction model in the Postgres database.
+All transactions can be viewed in json at /transaction/index.json
+Simple javascript for filling in the default values on the form and for notification of pass/fail from Moneris
