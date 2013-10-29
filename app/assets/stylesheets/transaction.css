@@ -36,8 +36,6 @@
 }
 .fullname{
   display:inline-block;
-  margin:left:20px;
-  margin:right:20px;
 
 }
 .fullname input{
@@ -48,8 +46,6 @@ display:inline-block;
 
 .expiry{
   display:inline-block;
-  margin:left:20px;
-  margin:right:20px;
 }
 .expiry input{
 width:104px;
